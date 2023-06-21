@@ -1,7 +1,7 @@
 import React from 'react'
 // import { useTranslation } from 'react-i18next'
 import { Fade } from "react-awesome-reveal";
-import { LearnMoreButton } from '@/components/learnMoreButton/LearnMoreButton.js';
+import { LearnMoreButton } from '../../../components/learnMoreButton/LearnMoreButton';
 // import { useContext } from 'react';
 // import { FillContext } from '../../../context/FillContext';
 import { ImageLoaded } from '../../imageLoaded/ImageLoaded.js';

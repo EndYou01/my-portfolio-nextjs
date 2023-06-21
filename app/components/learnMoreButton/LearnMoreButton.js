@@ -1,6 +1,6 @@
 
 // import { Link, usePathname } from 'next/link'
-import { Link } from 'next/link'
+import Link from 'next/link'
 // import { useLocation } from "react-router-dom";
 import { useTranslations } from "next-intl";
 

@@ -1,11 +1,12 @@
 
 "use client"
 
-import { About } from "@/components/home/about/About";
-import { WaveBlock } from "@/components/home/wave/WaveBlock";
-import { Work } from "@/components/home/work/Work";
-import { useTranslations } from "next-intl";
+import { About } from "../components/home/about/About";
+import { WaveBlock } from "../components/home/wave/WaveBlock";
+import { Work } from "../components/home/work/Work";
 
+
+import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { BsChevronDown } from "react-icons/bs";

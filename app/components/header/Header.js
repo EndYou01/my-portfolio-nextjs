@@ -22,7 +22,7 @@ import { HiSun } from "react-icons/hi";
 
 // import { useContext } from 'react';
 // import { FillContext } from '../../context/FillContext';
-import { activateDarkMode } from '../../functions/activateDarkMode';
+import { activateDarkMode } from '@/functions/activateDarkMode';
 import Link from 'next-intl/link';
 import { useTranslations } from "next-intl";
 
