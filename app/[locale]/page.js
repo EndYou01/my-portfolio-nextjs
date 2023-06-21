@@ -1,9 +1,9 @@
 
 "use client"
 
-import { About } from "../components/home/about/About";
-import { WaveBlock } from "../components/home/wave/WaveBlock";
-import { Work } from "../components/home/work/Work";
+import { About } from "@/components/home/about/About";
+import { WaveBlock } from "@/components/home/wave/WaveBlock";
+import { Work } from "@/components/home/work/Work";
 
 
 import { useTranslations } from "next-intl";

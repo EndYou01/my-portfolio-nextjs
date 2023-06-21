@@ -4,31 +4,51 @@
 // import React, { useContext, useState } from 'react'
 import { useState } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import { Spinner } from './Spinner'
+// import { Spinner } from './Spinner'
+import { Spinner } from 'react-bootstrap'
+import Image from 'next/image'
 // import { FillContext } from '../../context/FillContext'
 
-export const ImageLoaded = ({ effect, classname, alt, src }) => {
+export const ImageLoaded = ({ width, height, classname, alt, src }) => {
 
-    let [imageLoaded, setImageLoaded] = useState(false)
+    let [isLoading, setIsLoading] = useState(true)
+
     // let { firstLoad, setFirstLoad } = useContext(FillContext)
+
+    console.log({ isLoading })
 
     return (
         <div
             className={(classname === "bg_image") ? "ImageLoadedBackGround" : ""}
         >
-            {!imageLoaded
+            <Image
+                className={(classname === "bg_image") ? "bg_imageImageLoaded" : classname}
+                alt={alt}
+                src={src}
+                width={width}
+                height={height}
+                quality={100}
+                // onLoadingComplete={() => {
+                //     setIsLoading(false)
+                //     console.log('from onLoadingComplete ', { isLoading })
+                //     // setFirstLoad(true);
+                // }}
+            />
+
+            {/* {imageLoaded
                 ? <Spinner />
-                : <LazyLoadImage
-                    effect={effect}
+                : <Image
                     className={(classname === "bg_image") ? "bg_imageImageLoaded" : classname}
                     alt={alt}
-                    src={src}
+                    src={'/projects_assets/tmf/tmf1.png'}
+                    width={width}
+                    height={height}
                     onLoad={() => {
-                        setImageLoaded(true)
-                        setFirstLoad(true);
+                        setIsLoading(true)
+                        // setFirstLoad(true);
                     }}
                 />
-            }
+            } */}
 
 
             {/* {!firstLoad && (<LazyLoadImage
@@ -37,7 +57,7 @@ export const ImageLoaded = ({ effect, classname, alt, src }) => {
                 alt={alt}
                 src={src}
                 onLoad={() => {
-                    setImageLoaded(true)
+                    setIsLoading(true)
                     setFirstLoad(true);
                 }}
             />)}
@@ -49,7 +69,7 @@ export const ImageLoaded = ({ effect, classname, alt, src }) => {
                 alt={alt}
                 src={src}
                 onLoad={() => {
-                    setImageLoaded(true)
+                    setIsLoading(true)
                 }}
             />} */}
 

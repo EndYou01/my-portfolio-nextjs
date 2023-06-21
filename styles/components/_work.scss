@@ -147,7 +147,9 @@
 
 	.bg_imageImageLoaded {
 		transition: all 1s ease;
-		height: 300px;
+		max-height: 300px;
+		// height: 300px;
+		// width: 500px;
 		right: 0px;
 		margin-bottom: 100px;
 		// transition: 200ms;
