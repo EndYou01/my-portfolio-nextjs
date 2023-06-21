@@ -41,11 +41,11 @@ const sideMenuVariants = {
     },
 };
 
-const initializeHeader = () => {
-    localStorage.setItem('FillVariable', 'rgb(20,20,20)')
-}
+// const initializeHeader = () => {
+//     localStorage.setItem('FillVariable', 'rgb(20,20,20)')
+// }
 
-initializeHeader()
+// initializeHeader()
 
 export const Header = () => {
 
