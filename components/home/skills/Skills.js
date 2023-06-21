@@ -1,54 +1,56 @@
-import React, { useContext } from 'react'
+// import React, { useContext } from 'react'
 import { Fade } from "react-awesome-reveal";
-import { useTranslation } from 'react-i18next'
-import { FillContext } from '../../../context/FillContext';
+// import { useTranslation } from 'react-i18next'
+// import { FillContext } from '../../../context/FillContext';
 import { ShowTechIcons } from '../../showTechIcons/ShowTechIcons';
+import { useTranslations } from "next-intl";
 
 export const Skills = () => {
-	const [text] = useTranslation("global")
-	const { fillVariable } = useContext(FillContext)
+	// const [t] = useTranslation("global")
+	// const { fillVariable } = useContext(FillContext)
+    const t = useTranslations("translation");
 
 
 	return (
 		<div className='content'>
 			<Fade>
 				{/* Soft Skills */}
-				<h1 className='skills_h1'>{text("skills.soft-skills")}</h1>
-				<div className={
-					(!fillVariable)
-						? 'columns liDark'
-						: 'columns'
+				<h1 className='skills_h1'>{t("skills.soft-skills")}</h1>
+				<div className={"columns"
+					// (!fillVariable)
+					// 	? 'columns liDark'
+					// 	: 'columns'
 				}>
 					<ul>
 						<li>
-							<span>{text("skills.EB2")}</span>
+							<span>{t("skills.EB2")}</span>
 						</li>
 						<li>
-							<span>{text("skills.TE")}</span>
+							<span>{t("skills.TE")}</span>
 						</li>
 						<li>
-							<span>{text("skills.Friendly")}</span>
+							<span>{t("skills.Friendly")}</span>
 						</li>
 						<li>
-							<span>{text("skills.FL")}</span>
+							<span>{t("skills.FL")}</span>
 						</li>
 						<li>
-							<span>{text("skills.PA")}</span>
+							<span>{t("skills.PA")}</span>
 						</li>
 						<li>
-							<span>{text("skills.CO")}</span>
+							<span>{t("skills.CO")}</span>
 						</li>
 					</ul>
 				</div>
 
 
 				{/* Support Technologies */}
-				<h1 className='skills_h1'>{text("skills.support-technologies")}</h1>
+				<h1 className='skills_h1'>{t("skills.support-technologies")}</h1>
 				<br />
-				<div className={
-					(!fillVariable)
-						? 'columns liDark'
-						: 'columns'
+				<div className={"columns"
+					// (!fillVariable)
+					// 	? 'columns liDark'
+					// 	: 'columns'
 				}>
 					<ShowTechIcons
 						technologies={["git", "github", "vite", "Axios", "bootstrap", "React Bootstrap", "antdesign", "postman", "swr", "SASS", "Redux", "Redux ToolKit"]}
@@ -58,12 +60,12 @@ export const Skills = () => {
 
 
 				{/* Hard Technologies */}
-				<h1 className='skills_h1'>{text("skills.hard-technologies")}</h1>
+				<h1 className='skills_h1'>{t("skills.hard-technologies")}</h1>
 				<br />
-				<div className={
-					(!fillVariable)
-						? 'columns liDark'
-						: 'columns'
+				<div className={"columns"
+					// (!fillVariable)
+					// 	? 'columns liDark'
+					// 	: 'columns'
 				}>
 					{/* Hard Skills */}
 					<ul>

@@ -1,21 +1,21 @@
 
-"use client"
+// "use client"
 
 // import React, { useContext, useState } from 'react'
-import { useState } from 'react'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
+// import { useState } from 'react'
+// import { LazyLoadImage } from 'react-lazy-load-image-component'
 // import { Spinner } from './Spinner'
-import { Spinner } from 'react-bootstrap'
+// import { Spinner } from 'react-bootstrap'
 import Image from 'next/image'
 // import { FillContext } from '../../context/FillContext'
 
 export const ImageLoaded = ({ width, height, classname, alt, src }) => {
 
-    let [isLoading, setIsLoading] = useState(true)
+    // let [isLoading, setIsLoading] = useState(true)
 
     // let { firstLoad, setFirstLoad } = useContext(FillContext)
 
-    console.log({ isLoading })
+    // console.log({ isLoading })
 
     return (
         <div

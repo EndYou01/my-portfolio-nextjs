@@ -1,9 +1,10 @@
 import { Inter } from 'next/font/google'
 import { notFound } from "next/navigation";
-import styles from '@/styles/styles.scss'
 import { Footer } from '@/components/footer/Footer';
 import { Header } from '@/components/header/Header';
 import { NextIntlClientProvider } from 'next-intl';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from '@/styles/styles.scss'
 
 const inter = Inter({ subsets: ['latin'] })
 

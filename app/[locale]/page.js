@@ -2,6 +2,7 @@
 "use client"
 
 import { About } from "@/components/home/about/About";
+import { Skills } from "@/components/home/skills/Skills";
 import { WaveBlock } from "@/components/home/wave/WaveBlock";
 import { Work } from "@/components/home/work/Work";
 
@@ -35,6 +36,7 @@ export default function Home() {
 
                 <About />
                 <Work />
+                <Skills />
             </main>
         </div>
     )
