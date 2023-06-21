@@ -1,95 +1,96 @@
 {
-    "header": {
-        "portofolio": "Portfolio",
-        "about": "About",
-        "work": "Work",
-        "contact": "Contact"
-    },
-    "footer": {
-        "contactMe": "Contact me",
-        "downloadCV": "Download CV",
-        "linkedin": "My LinkedIn Profile",
-        "source": "See source code",
-        "nosource": "Code not available"
-    },
-    "about": {
-        "a&e": "About & Experience",
-        "a&et": "I am Jorge L. Senjudo, Front-End developer with experience in development and construction of websites, in which I have worked alone and with other developers, always looking to polish my skills both personally and professionally, to achieve the deployment of software with the appropriate quality. I work mainly using ReactJS code, with the ability to learn any JS framework or tool. I have brief experience with backend languages like JAVA and databases like MySQL. As a goal I have set out to reach to be a fullstack developer, and to be able to lead a full live.",
-        "profExp": "Professional Experience",
-        "education": "Education",
-        "2020": "2020-09/ 2022-12",
-        "h4": "Student of Computer Science Engineer",
-        "uci": "University of Computer Science, Havana, Cuba",
-        "graduation1": "Graduation:",
-        "graduation2": "Drop out of college",
-        "average": "Average:",
-        "fronh4": "Frontend Software Engineer",
-        "fronp1": "I started my preparation as a fullstack developer and I decided to start with this branch, and in it I have understood how the web and computer systems work. I have worked for several clients, doing mainly components of web pages, accumulating experience during this period and I believe I can translate into code, the design that is given to me."
-    },
-    "skills": {
-        "soft-skills": "Soft Skills",
-        "support-technologies": "Support Technologies",
-        "hard-technologies": "Hard Technologies",
-        "EB2": "English B2",
-        "TE": "Teamwork",
-        "Friendly": "Friendly",
-        "FL": "Fast learn",
-        "PA": "Proactive",
-        "CO": "Commitment"
-    },
-    "waveB": {
-        "h3": "Hi, I'm Jorge Senjudo!",
-        "h1": "I am a web developer with experience in creating production-ready web applications."
-    },
-    "work": {
-        "h1": "University Projects",
-        "lm": "Learn More",
-        "freelance": "Freelance Projects"
-    },
-    "snb": {
-        "p1": "SNB 2022 is a project developed using the Net.Beans development environment, using Java as a language main. It is a game oriented mainly to my training as a software engineer, in which they apply complex algorithms such as Fisher Yates, for randomization of random numbers. The logo you can see on the project is Lens, the name chosen by the team of developers who live at the university.",
-        "l1": "Project Rating: 5/5 points",
-        "l2": "Workmate:",
-        "h2_1": "Technologies used:",
-        "p2": "The application was deployed only in desktop format, and for this Java was implemented in its development. No library was used since it had as its goal, the mastery of language from its bases. For the layout of the project we rely on a graphic designer.",
-        "p3": "On this side of the project, we use MySql as the database to which we make requests and manipulate the information we had to distribute in the different interfaces.",
-        "b": "Back"
-    },
-    "tmf": {
-        "h2": "Your favorite Mandalorian",
-        "p1": "I can consider it my first project related to programming. With it, I laid the foundation for the structured programming I learned with C++, with artistic touches oriented to the Star Wars cinematic universe.",
-        "l1": "Workmate:",
-        "p2": "Created from the same foundations of learning, the project did not have an interface as such, we rely on the Visual Studio Code terminal to reach the user. We were given the possibility to start our imagination and it was there that we found the world of ASCII Art, art through console terminals.",
-        "p3": "Behind the beautiful interface, there is code deployed with C++, not very complex."
-    },
-    "citas": {
-        "p1": "CitasApp is a component within a larger project, in which I participated. It is composed of a validation of forms and queries to the localStorage, built with Reactjs and AntDesign.",
-        "p2": "At the level of creative complexity, it is a simple component and easy to create.",
-        "p3": "It was necessary to carry out validations to each of the form fields that existed, and adapt them according to the client's specifications."
-    },
-    "confort":{
-        "h2": "Confort",
-        "p": "First e-commerce site I worked on alongside the Go Django Development team.",
-        "p1": "My role in this project was to develop the front-end, at the request of the client (and my superior at the time, to measure my skills) it was built entirely with HTML5, CSS and Javascript, and using Bootstrap as the only tool to support me. I made only the front-end, doing all the functionalities and designs of the page. It was the project, with which I put into practice, the bases of knowledge that are needed to start entering the world of web development.",
-        "p2": "I am pleased to add to my portfolio this project in which I worked in coordination with a designer who was in charge of the design of the website. We jointly clarify doubts and questions related to it, also creating two different views, one for the mobile version and another for the desktop version, adding of course the necessary CSS media queries. The different sections of the information contained in the website were loaded dynamically from an API, as well as the products that are presented there, as well as the different elements of the graphical interface. I strive to offer quality solutions based on the use of best practices in web development, remote work, agile methodologies and the speed with which I deliver the results, with the highest level of professionalism.",
-        "p3": "Made entirely by the Go Django Development development group, using Django, a Python framework dedicated to back-end work with the web. Querying APIs to make micropayments and querying the Database to load the products dynamically."
-    },
-    "coremant":{
-        "p": "Website, from the company of the same name, which was launched with the aim of expanding its borders and making itself known by this means.",
-        "p1": "The project was created from scratch, where it went through stages of design, planning and meetings with the client, stages in which I was in charge of the operation. In the development phase we were involved two developers for the creation of the site in the shortest possible time, it was not difficult since only a Front-End team was necessary. With this work I felt more pressure with aspects such as leadership in front of a team and being the one who faces the client, than the development process."
-    },
-    "crossBorder": {
-        "p1": "Dynamic website, created by the Go Django Development development team to provide the backend. I was at the helm of the frontend development team.",
-        "l1": "Frontend Workmate: ",
-        "l2": "Backend Workmate: ",
-        "p2": "Once the development process began, I distributed the work together with the other frontend developer to speed it up. Redux was used for better management of the application and to load the endpoints provided by the backend team, we used Axios, which made all the products load dynamically. When it came to the visual part, some not too complicated animations were made, using tools provided by SASS to achieve this.",
-        "p3": "The developer who worked on this section of the project was a member of Go Django Development, a group with which he had previously worked. He was in charge of everything related to the database and the server side, making sure that all processes were running correctly to ensure proper functioning of the website."
-    },
-    "kidsrUs":{
-        "p1": "The project is the result of the technical test for front-end programmer of the Chilean company Business Bureau Digital, position for which I applied.",
-        "p2": "The test consisted of creating this site within a week, for which I could use the technology with which I felt most comfortable. They gave me the instructions of functionalities that they wanted to appear and the images of all the products. By not providing me with any API,. JSON or database I had to make a Mock with all the parameters of each product to then be able to work.",
-        "p3": "For the implementation of global states I relied on React-Redux, so I dominated the interface using dispatches that modified these states. I created the animations as they appeared, making use of libraries such as react-image-magnify for the zoom effect when hover the image of the ProductPage tab, animate.css for others a little more basic and react-awesome-reveal for the first appearance of the components."
-    },
-    "version": "Version 1.2.0"
-    
+    "translation": {
+        "header": {
+            "portofolio": "Portfolio",
+            "about": "About",
+            "work": "Work",
+            "contact": "Contact"
+        },
+        "footer": {
+            "contactMe": "Contact me",
+            "downloadCV": "Download CV",
+            "linkedin": "My LinkedIn Profile",
+            "source": "See source code",
+            "nosource": "Code not available"
+        },
+        "about": {
+            "a&e": "About & Experience",
+            "a&et": "I am Jorge L. Senjudo, Front-End developer with experience in development and construction of websites, in which I have worked alone and with other developers, always looking to polish my skills both personally and professionally, to achieve the deployment of software with the appropriate quality. I work mainly using ReactJS code, with the ability to learn any JS framework or tool. I have brief experience with backend languages like JAVA and databases like MySQL. As a goal I have set out to reach to be a fullstack developer, and to be able to lead a full live.",
+            "profExp": "Professional Experience",
+            "education": "Education",
+            "2020": "2020-09/ 2022-12",
+            "h4": "Student of Computer Science Engineer",
+            "uci": "University of Computer Science, Havana, Cuba",
+            "graduation1": "Graduation:",
+            "graduation2": "Drop out of college",
+            "average": "Average:",
+            "fronh4": "Frontend Software Engineer",
+            "fronp1": "I started my preparation as a fullstack developer and I decided to start with this branch, and in it I have understood how the web and computer systems work. I have worked for several clients, doing mainly components of web pages, accumulating experience during this period and I believe I can translate into code, the design that is given to me."
+        },
+        "skills": {
+            "soft-skills": "Soft Skills",
+            "support-technologies": "Support Technologies",
+            "hard-technologies": "Hard Technologies",
+            "EB2": "English B2",
+            "TE": "Teamwork",
+            "Friendly": "Friendly",
+            "FL": "Fast learn",
+            "PA": "Proactive",
+            "CO": "Commitment"
+        },
+        "waveB": {
+            "h3": "Hi, I'm Jorge Senjudo!",
+            "h1": "I am a web developer with experience in creating production-ready web applications."
+        },
+        "work": {
+            "h1": "University Projects",
+            "lm": "Learn More",
+            "freelance": "Freelance Projects"
+        },
+        "snb": {
+            "p1": "SNB 2022 is a project developed using the Net.Beans development environment, using Java as a language main. It is a game oriented mainly to my training as a software engineer, in which they apply complex algorithms such as Fisher Yates, for randomization of random numbers. The logo you can see on the project is Lens, the name chosen by the team of developers who live at the university.",
+            "l1": "Project Rating: 5/5 points",
+            "l2": "Workmate:",
+            "h2_1": "Technologies used:",
+            "p2": "The application was deployed only in desktop format, and for this Java was implemented in its development. No library was used since it had as its goal, the mastery of language from its bases. For the layout of the project we rely on a graphic designer.",
+            "p3": "On this side of the project, we use MySql as the database to which we make requests and manipulate the information we had to distribute in the different interfaces.",
+            "b": "Back"
+        },
+        "tmf": {
+            "h2": "Your favorite Mandalorian",
+            "p1": "I can consider it my first project related to programming. With it, I laid the foundation for the structured programming I learned with C++, with artistic touches oriented to the Star Wars cinematic universe.",
+            "l1": "Workmate:",
+            "p2": "Created from the same foundations of learning, the project did not have an interface as such, we rely on the Visual Studio Code terminal to reach the user. We were given the possibility to start our imagination and it was there that we found the world of ASCII Art, art through console terminals.",
+            "p3": "Behind the beautiful interface, there is code deployed with C++, not very complex."
+        },
+        "citas": {
+            "p1": "CitasApp is a component within a larger project, in which I participated. It is composed of a validation of forms and queries to the localStorage, built with Reactjs and AntDesign.",
+            "p2": "At the level of creative complexity, it is a simple component and easy to create.",
+            "p3": "It was necessary to carry out validations to each of the form fields that existed, and adapt them according to the client's specifications."
+        },
+        "confort": {
+            "h2": "Confort",
+            "p": "First e-commerce site I worked on alongside the Go Django Development team.",
+            "p1": "My role in this project was to develop the front-end, at the request of the client (and my superior at the time, to measure my skills) it was built entirely with HTML5, CSS and Javascript, and using Bootstrap as the only tool to support me. I made only the front-end, doing all the functionalities and designs of the page. It was the project, with which I put into practice, the bases of knowledge that are needed to start entering the world of web development.",
+            "p2": "I am pleased to add to my portfolio this project in which I worked in coordination with a designer who was in charge of the design of the website. We jointly clarify doubts and questions related to it, also creating two different views, one for the mobile version and another for the desktop version, adding of course the necessary CSS media queries. The different sections of the information contained in the website were loaded dynamically from an API, as well as the products that are presented there, as well as the different elements of the graphical interface. I strive to offer quality solutions based on the use of best practices in web development, remote work, agile methodologies and the speed with which I deliver the results, with the highest level of professionalism.",
+            "p3": "Made entirely by the Go Django Development development group, using Django, a Python framework dedicated to back-end work with the web. Querying APIs to make micropayments and querying the Database to load the products dynamically."
+        },
+        "coremant": {
+            "p": "Website, from the company of the same name, which was launched with the aim of expanding its borders and making itself known by this means.",
+            "p1": "The project was created from scratch, where it went through stages of design, planning and meetings with the client, stages in which I was in charge of the operation. In the development phase we were involved two developers for the creation of the site in the shortest possible time, it was not difficult since only a Front-End team was necessary. With this work I felt more pressure with aspects such as leadership in front of a team and being the one who faces the client, than the development process."
+        },
+        "crossBorder": {
+            "p1": "Dynamic website, created by the Go Django Development development team to provide the backend. I was at the helm of the frontend development team.",
+            "l1": "Frontend Workmate: ",
+            "l2": "Backend Workmate: ",
+            "p2": "Once the development process began, I distributed the work together with the other frontend developer to speed it up. Redux was used for better management of the application and to load the endpoints provided by the backend team, we used Axios, which made all the products load dynamically. When it came to the visual part, some not too complicated animations were made, using tools provided by SASS to achieve this.",
+            "p3": "The developer who worked on this section of the project was a member of Go Django Development, a group with which he had previously worked. He was in charge of everything related to the database and the server side, making sure that all processes were running correctly to ensure proper functioning of the website."
+        },
+        "kidsrUs": {
+            "p1": "The project is the result of the technical test for front-end programmer of the Chilean company Business Bureau Digital, position for which I applied.",
+            "p2": "The test consisted of creating this site within a week, for which I could use the technology with which I felt most comfortable. They gave me the instructions of functionalities that they wanted to appear and the images of all the products. By not providing me with any API,. JSON or database I had to make a Mock with all the parameters of each product to then be able to work.",
+            "p3": "For the implementation of global states I relied on React-Redux, so I dominated the interface using dispatches that modified these states. I created the animations as they appeared, making use of libraries such as react-image-magnify for the zoom effect when hover the image of the ProductPage tab, animate.css for others a little more basic and react-awesome-reveal for the first appearance of the components."
+        },
+        "version": "Version 1.2.0"
+    }
 }
