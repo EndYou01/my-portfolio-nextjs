@@ -1,9 +1,14 @@
 
 import { ImageLoaded } from '../imageLoaded/ImageLoaded'
-import { Row, Col } from '@/components/bootstrap'
+import { Row, Col } from '../bootstrap'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
-export const ShowTechIcons = ({ technologies, position }) => {
+interface Props {
+    technologies: Array<string>,
+    position: string,
+}
+
+export const ShowTechIcons = ({ technologies, position }: Props) => {
 
     let fillVariable = localStorage.getItem('FillVariable')
 

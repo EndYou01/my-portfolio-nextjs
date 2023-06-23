@@ -10,14 +10,16 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 // import { useTranslation } from 'react-i18next'
 // import { FillContext } from '../../context/FillContext';
-import { useTranslations } from "next-intl";
-import '@/styles/components/_footer.scss'
+// import { useTranslations } from "next-intl";
+
+import { TranslationText } from "../../components/TranslationText";
+
 
 export const Footer = () => {
 	// const [text] = useTranslation("global")
 
 	// const { fillVariable } = useContext(FillContext)
-	const t = useTranslations("translation");
+	// const t = useTranslations("translation");
 	return (
 		<footer id="contact" className={"footer_section"
 			// (fillVariable)
@@ -26,7 +28,9 @@ export const Footer = () => {
 		}>
 			{/* <Fade> */}
 			<div className='contact_content'>
-				<h2>{t("footer.contactMe")}</h2>
+				{/* <h2>{t("footer.contactMe")}</h2> */}
+				<h2><TranslationText message="footer.contactMe" /></h2>
+
 				<br />
 
 				<div className='footer_flex'>
@@ -60,7 +64,8 @@ export const Footer = () => {
 								target="_blank"
 								rel="noreferrer"
 							>
-								{t("footer.linkedin")}
+								{/* {t("footer.linkedin")} */}
+								<TranslationText message="footer.linkedin" />
 							</a>
 						</li>
 					</ul>
@@ -111,11 +116,16 @@ export const Footer = () => {
 						href="https://github.com/EndYou01/my-portfolio"
 						rel="noreferrer"
 					>
-						{t("footer.source")}
+						{/* {t("footer.source")} */}
+						<TranslationText message="footer.source" />
+
 					</a>
 
 				</div>
-				<p className='version'>{t("version")}</p>
+				<p className='version'>
+					{/* {t("version")} */}
+					<TranslationText message="version" />
+				</p>
 			</div>
 			{/* </Fade> */}
 		</footer>

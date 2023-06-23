@@ -9,7 +9,15 @@
 import Image from 'next/image'
 // import { FillContext } from '../../context/FillContext'
 
-export const ImageLoaded = ({ width, height, classname, alt, src }) => {
+interface Props {
+    width: number,
+    height: number,
+    classname: string,
+    alt: string;
+    src: string;
+}
+
+export const ImageLoaded = ({ width, height, classname, alt, src }: Props) => {
 
     // let [isLoading, setIsLoading] = useState(true)
 
@@ -28,11 +36,11 @@ export const ImageLoaded = ({ width, height, classname, alt, src }) => {
                 width={width}
                 height={height}
                 quality={100}
-                // onLoadingComplete={() => {
-                //     setIsLoading(false)
-                //     console.log('from onLoadingComplete ', { isLoading })
-                //     // setFirstLoad(true);
-                // }}
+            // onLoadingComplete={() => {
+            //     setIsLoading(false)
+            //     console.log('from onLoadingComplete ', { isLoading })
+            //     // setFirstLoad(true);
+            // }}
             />
 
             {/* {imageLoaded

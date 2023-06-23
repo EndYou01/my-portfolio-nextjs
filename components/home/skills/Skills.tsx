@@ -3,19 +3,23 @@ import { Fade } from "react-awesome-reveal";
 // import { useTranslation } from 'react-i18next'
 // import { FillContext } from '../../../context/FillContext';
 import { ShowTechIcons } from '../../showTechIcons/ShowTechIcons';
-import { useTranslations } from "next-intl";
+import { TranslationText } from "../../TranslationText";
+// import { useTranslations } from "next-intl";
 
 export const Skills = () => {
 	// const [t] = useTranslation("global")
 	// const { fillVariable } = useContext(FillContext)
-    const t = useTranslations("translation");
+	// const t = useTranslations("translation");
 
 
 	return (
 		<div className='content'>
 			<Fade>
 				{/* Soft Skills */}
-				<h1 className='skills_h1'>{t("skills.soft-skills")}</h1>
+				<h1 className='skills_h1'>
+					{/* {t("skills.soft-skills")} */}
+					<TranslationText message="skills.soft-skills" />
+					</h1>
 				<div className={"columns"
 					// (!fillVariable)
 					// 	? 'columns liDark'
@@ -23,29 +27,50 @@ export const Skills = () => {
 				}>
 					<ul>
 						<li>
-							<span>{t("skills.EB2")}</span>
+							<span>
+								<TranslationText message="skills.EB2" />
+								{/* {t("skills.EB2")} */}
+							</span>
 						</li>
 						<li>
-							<span>{t("skills.TE")}</span>
+							<span>
+								<TranslationText message="skills.TE" />
+								{/* {t("skills.TE")} */}
+							</span>
 						</li>
 						<li>
-							<span>{t("skills.Friendly")}</span>
+							<span>
+								<TranslationText message="skills.Friendly" />
+								{/* {t("skills.Friendly")} */}
+							</span>
 						</li>
 						<li>
-							<span>{t("skills.FL")}</span>
+							<span>
+								<TranslationText message="skills.FL" />
+								{/* {t("skills.FL")} */}
+							</span>
 						</li>
 						<li>
-							<span>{t("skills.PA")}</span>
+							<span>
+								<TranslationText message="skills.PA" />
+								{/* {t("skills.PA")} */}
+							</span>
 						</li>
 						<li>
-							<span>{t("skills.CO")}</span>
+							<span>
+								<TranslationText message="skills.CO" />
+								{/* {t("skills.CO")} */}
+							</span>
 						</li>
 					</ul>
 				</div>
 
 
 				{/* Support Technologies */}
-				<h1 className='skills_h1'>{t("skills.support-technologies")}</h1>
+				<h1 className='skills_h1'>
+					{/* {t("skills.support-technologies")} */}
+					<TranslationText message="skills.support-technologies" />
+				</h1>
 				<br />
 				<div className={"columns"
 					// (!fillVariable)
@@ -60,7 +85,10 @@ export const Skills = () => {
 
 
 				{/* Hard Technologies */}
-				<h1 className='skills_h1'>{t("skills.hard-technologies")}</h1>
+				<h1 className='skills_h1'>
+					{/* {t("skills.hard-technologies")} */}
+					<TranslationText message="skills.hard-technologies" />
+				</h1>
 				<br />
 				<div className={"columns"
 					// (!fillVariable)

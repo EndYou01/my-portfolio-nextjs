@@ -1,18 +1,18 @@
-import React from 'react'
 // import { useTranslation } from 'react-i18next'
 import { Fade } from "react-awesome-reveal";
-import { LearnMoreButton } from '@/components/learnMoreButton/LearnMoreButton';
+import { LearnMoreButton } from '../../learnMoreButton/LearnMoreButton';
 // import { useContext } from 'react';
 // import { FillContext } from '../../../context/FillContext';
-import { ImageLoaded } from '../../imageLoaded/ImageLoaded.js';
-import { useTranslations } from "next-intl";
+import { ImageLoaded } from '../../imageLoaded/ImageLoaded';
+import { TranslationText } from "../../TranslationText";
+// import { useTranslations } from "next-intl";
 
 //Images
 // import tmfImage from '@/public/projects_assets/tmf/tmf1.png'
 // import Image from 'next/image.js';
 
 export const Work = () => {
-	const t = useTranslations("translation");
+	// const t = useTranslations("translation");
 
 	// const { fillVariable } = useContext(FillContext)
 
@@ -20,7 +20,10 @@ export const Work = () => {
 		<div id="work" className='work_container'>
 
 			<Fade>
-				<h1 className='header'>{t("work.h1")}</h1>
+				<h1 className='header'>
+					{/* {t("work.h1")} */}
+					<TranslationText message="work.h1" />
+				</h1>
 			</Fade>
 
 			<div>
@@ -51,9 +54,13 @@ export const Work = () => {
 							</div>
 
 							<div className='project_info_container'>
-								<h2>{t("tmf.h2")}</h2>
+								<h2>
+									<TranslationText message="tmf.h2" />
+									{/* {t("tmf.h2")} */}
+								</h2>
 								<p>
-									{t("tmf.p1")}
+									<TranslationText message="tmf.p1" />
+									{/* {t("tmf.p1")} */}
 								</p>
 								<LearnMoreButton pathname='/mandalorian' />
 							</div>
@@ -84,7 +91,9 @@ export const Work = () => {
 
 							<div className='project_info_container'>
 								<h2>SNB 2022</h2>
-								<p>{t("snb.p1")}
+								<p>
+									{/* {t("snb.p1")} */}
+									<TranslationText message="snb.p1" />
 								</p>
 								<LearnMoreButton pathname='/snb' />
 							</div>
@@ -95,7 +104,10 @@ export const Work = () => {
 				<br />
 
 				<Fade>
-					<h1 className='header'>{t("work.freelance")}</h1>
+					<h1 className='header'>
+						<TranslationText message="work.freelance" />
+						{/* {t("work.freelance")} */}
+					</h1>
 				</Fade>
 
 				<section className={"projects_section"
@@ -117,7 +129,9 @@ export const Work = () => {
 							</div>
 							<div className='project_info_container'>
 								<h2>CitasApp</h2>
-								<p>{t("citas.p1")}
+								<p>
+									{/* {t("citas.p1")} */}
+									<TranslationText message="citas.p1" />
 								</p>
 								<LearnMoreButton pathname='/citasApp' />
 							</div>
@@ -147,7 +161,9 @@ export const Work = () => {
 							</div>
 							<div className='project_info_container'>
 								<h2>Confort</h2>
-								<p>{t("confort.p")}
+								<p>
+									<TranslationText message="confort.p" />
+									{/* {t("confort.p")} */}
 								</p>
 								<LearnMoreButton pathname='/confort' />
 							</div>
@@ -176,7 +192,9 @@ export const Work = () => {
 							</div>
 							<div className='project_info_container'>
 								<h2>Coremant</h2>
-								<p>{t("coremant.p")}
+								<p>
+									<TranslationText message="coremant.p" />
+									{/* {t("coremant.p")} */}
 								</p>
 								<LearnMoreButton pathname='/coremant' />
 							</div>
@@ -205,7 +223,9 @@ export const Work = () => {
 							</div>
 							<div className='project_info_container'>
 								<h2>Cross Border Trade</h2>
-								<p>{t("crossBorder.p1")}
+								<p>
+									<TranslationText message="crossBorder.p1" />
+									{/* {t("crossBorder.p1")} */}
 								</p>
 								<LearnMoreButton pathname='/crossBorder' />
 							</div>
@@ -234,7 +254,9 @@ export const Work = () => {
 							</div>
 							<div className='project_info_container'>
 								<h2>Kids`R`Us</h2>
-								<p>{t("kidsrUs.p1")}
+								<p>
+									<TranslationText message="kidsrUs.p1" />
+									{/* {t("kidsrUs.p1")} */}
 								</p>
 								<LearnMoreButton pathname='/kidsrUs' />
 							</div>

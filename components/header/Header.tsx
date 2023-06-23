@@ -1,11 +1,11 @@
 "use client"
 
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 // import { useNavigate, NavLink } from 'react-router-dom';
 
 // import { useTranslation } from 'react-i18next'
-import { scrollToTop } from '@/functions/scrollToTop';
-import { scrollToBottom } from '@/functions/scrollToBottom';
+import { scrollToTop } from '../../functions/scrollToTop';
+import { scrollToBottom } from '../../functions/scrollToBottom';
 
 import { motion } from "framer-motion";
 import { isMobile } from "react-device-detect";
@@ -22,11 +22,12 @@ import { HiSun } from "react-icons/hi";
 
 // import { useContext } from 'react';
 // import { FillContext } from '../../context/FillContext';
-import { activateDarkMode } from '@/functions/activateDarkMode';
-import Link from 'next-intl/link';
-import { useTranslations } from "next-intl";
+import { activateDarkMode } from '../../functions/activateDarkMode';
 
-import '@/styles/components/_header.scss'
+import Link from 'next-intl/link'
+
+import { useTranslations } from "next-intl";
+// import '@/styles/components/_header.scss'
 
 const sideMenuVariants = {
     open: {
@@ -42,7 +43,7 @@ const sideMenuVariants = {
 };
 
 // const initializeHeader = () => {
-//     localStorage.setItem('FillVariable', 'rgb(20,20,20)')
+// //     localStorage.setItem('FillVariable', 'rgb(20,20,20)')
 // }
 
 // initializeHeader()
@@ -68,23 +69,23 @@ export const Header = () => {
     };
 
     const handleDarkModeToggle = () => {
-        handleStorageChange()
+        // handleStorageChange()
         setIsDarkMode(!isDarkMode);
         activateDarkMode()
     };
 
-    const handleStorageChange = () => {
-        let fillVariable = localStorage.getItem('FillVariable')
+    // const handleStorageChange = () => {
+    //     // let fillVariable = localStorage.getItem('FillVariable')
 
-        if (fillVariable === 'rgb(20,20,20)') {
-            localStorage.setItem('FillVariable', 'rgb(255,255,255)')
-            // setFillVariable(false)
-        }
-        if (fillVariable === 'rgb(255,255,255)') {
-            localStorage.setItem('FillVariable', 'rgb(20,20,20)')
-            // setFillVariable(true)
-        }
-    };
+    //     if (fillVariable === 'rgb(20,20,20)') {
+    //         // localStorage.setItem('FillVariable', 'rgb(255,255,255)')
+    //         // setFillVariable(false)
+    //     }
+    //     if (fillVariable === 'rgb(255,255,255)') {
+    //         // localStorage.setItem('FillVariable', 'rgb(20,20,20)')
+    //         // setFillVariable(true)
+    //     }
+    // };
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll, { passive: true });
@@ -94,36 +95,36 @@ export const Header = () => {
         };
     }, []);
 
-    const toSpanish = () => {
-        // window.location.reload();
-        scrollToTop()
-        localStorage.setItem('lastLang', 'ES')
-        // i18n.changeLanguage("es")
-    }
-    const toEnglish = () => {
-        scrollToTop()
-        // window.location.reload();
-        localStorage.setItem('lastLang', 'EN')
-        // i18n.changeLanguage("en")
-    }
+    // const toSpanish = () => {
+    //     // window.location.reload();
+    //     scrollToTop()
+    //     // localStorage.setItem('lastLang', 'ES')
+    //     // i18n.changeLanguage("es")
+    // }
+    // const toEnglish = () => {
+    //     scrollToTop()
+    //     // window.location.reload();
+    //     // localStorage.setItem('lastLang', 'EN')
+    //     // i18n.changeLanguage("en")
+    // }
 
-    const lang = localStorage.getItem('lastLang') || 'EN'
+    // const lang = localStorage.getItem('lastLang') || 'EN'
 
-    var langx
+    // var langx
 
-    if (lang === 'ES') {
-        langx = 'ES';
-    } else {
-        langx = 'EN';
-    }
+    // if (lang === 'ES') {
+    //     langx = 'ES';
+    // } else {
+    //     langx = 'EN';
+    // }
 
-    const changeLanguaje = () => {
-        if (lang === 'ES') {
-            toEnglish();
-        } else {
-            toSpanish();
-        }
-    }
+    // const changeLanguaje = () => {
+    //     if (lang === 'ES') {
+    //         toEnglish();
+    //     } else {
+    //         toSpanish();
+    //     }
+    // }
 
     return (
         <header className={
@@ -135,7 +136,7 @@ export const Header = () => {
         }>
 
             <div className="header_content">
-                <span
+                {/* <span
                     onClick={() => {
                         navigate('/')
                         scrollToTop()
@@ -144,7 +145,18 @@ export const Header = () => {
                     className="header_title"
                 >
                     {t("header.portofolio")}
-                </span>
+                </span> */}
+                <Link
+                    href={'/'}
+                    onClick={() => {
+                        // navigate('/')
+                        scrollToTop()
+                    }}
+                    style={{ cursor: "pointer" }}
+                    className="header_title"
+                >
+                    {t("header.portofolio")}
+                </Link>
 
 
 
@@ -178,8 +190,8 @@ export const Header = () => {
                             <li>
                                 <Link
                                     className="navigation_button"
-                                    onClick={scrollToTop}
-                                    href="/about"
+                                    // onClick={scrollToTop}
+                                    href={"/about"}
                                 >
                                     <AiOutlineInfoCircle className='menu_icon' />
                                     {t("header.about")}
@@ -189,8 +201,8 @@ export const Header = () => {
                             <li>
                                 <Link
                                     className="navigation_button"
-                                    onClick={scrollToTop}
-                                    href="/work"
+                                    // onClick={scrollToTop}
+                                    href={"/work"}
                                 >
                                     <MdWeb className='menu_icon' />
                                     {t("header.work")}
@@ -212,20 +224,20 @@ export const Header = () => {
                                 {/* <button className="navigation_button dropdown-toggle" onClick={changeLanguaje}>
                                     {langx}
                                 </button> */}
-                                <Link
+                                {/* <Link
                                     className='navigation_button dropdown-toggle'
-                                    href='/'
-                                    locale={ langx == 'EN' ? 'es' : 'en'}
-                                    onClick={changeLanguaje}
+                                    href={'/'}
+                                    locale={langx == 'EN' ? 'es' : 'en'}
+                                    // onClick={changeLanguaje}
                                 >
                                     {langx}
-                                </Link>
+                                </Link> */}
                             </li>
 
                             {
                                 (!isDarkMode)
                                     ? (<li className='li_icon'>
-                                        <button type='checkbox' className='navigation_button li_mr-2' onClick={() => {
+                                        <button className='navigation_button li_mr-2' onClick={() => {
                                             handleDarkModeToggle()
                                         }
                                         }>
@@ -234,7 +246,7 @@ export const Header = () => {
                                         <span><HiMoon className='header_icon' /></span>
                                     </li>)
                                     : (<li className='li_icon'>
-                                        <button type='checkbox' className='navigation_button li_mr-2' onClick={() => {
+                                        <button className='navigation_button li_mr-2' onClick={() => {
                                             handleDarkModeToggle()
                                         }
                                         }>
